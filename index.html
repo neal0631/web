@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REDSTONE LOGIC</title>
+    <style>        
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1e1e1e;
+            color: #ecf0f1;
+        }
+       
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        header {
+            position: sticky;
+            top: 0;
+            background-color: #2c3e50;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        
+        .logo {
+            text-align: center;
+            padding: 20px 0;
+            font-size: 32px;
+            font-weight: 900;
+            letter-spacing: 3px;
+        }
+
+        .logo a {
+            color: #ff3333;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .logo a:hover {
+            color: #ff6666;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #1a252f;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: #ecf0f1;
+            padding: 15px 25px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            transition: background-color 0.2s;
+        }
+
+        nav a:hover {
+            background-color: #ff3333;
+            color: white;
+        }
+        
+        .content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        section {            
+            min-height: 80vh;             
+            scroll-margin-top: 140px; 
+            padding: 40px 20px;
+            margin-bottom: 20px;
+            background-color: #2c3e50;
+            border-radius: 8px;
+            border-left: 5px solid #ff3333;
+        }
+
+        h2 {
+            font-size: 28px;
+            margin-top: 0;
+            color: #ff3333;
+        }
+
+        p {
+            line-height: 1.6;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body id="top">
+
+    <header>
+        <div class="logo">
+            <a href="#top">REDSTONE LOGIC</a>
+        </div>
+        <nav>
+            <a href="#redstone-top">REDSTONE</a>
+            <a href="#and-gate">AND</a>
+            <a href="#or-gate">OR</a>
+            <a href="#not-gate">NOT</a>
+            <a href="#nand-gate">NAND</a>
+            <a href="#nor-gate">NOR</a>
+            <a href="#xor-gate">XOR</a>
+            <a href="#xnor-gate">XNOR</a>
+            <a href="#adder-gate">ADDER</a>
+        </nav>
+    </header>
+
+    <div class="content">
+        <section id="redstone-top">
+            <h2>About redstone</h2>
+            <p>레드스톤의 메커니즘을 알려줍니다.</p>
+            <a href="https://ibb.co/sdypqMMc"><img src="https://i.ibb.co/RkzGcVVt/redstone-powder.png" alt="redstone-powder" border="0" style="margin-top: 80px;" alt="lever" width="400" height="300"></a>
+            <p>'레드스톤 가루'입니다.</p>
+            <p>회로의 신호를 보내주는 역할을 합니다.</p>
+            <a href="https://ibb.co/hN7zsLG"><img src="https://i.ibb.co/BJzMLch/lever.png" alt="lever" border="0" style="margin-top: 80px;" width="400" height="300"></a>
+            <p>'레버'입니다.</p>
+            <p>논리회로에서 0, 1의 입력 역할을 합니다.</p>
+            <a href="https://ibb.co/9m5rZ4qs"><img src="https://i.ibb.co/nqJLP1Dz/redstone-torch.png" alt="redstone-torch" border="0" style="margin-top: 80px;" width="400" height="300"></a>
+            <p>'레드스톤 횃불'입니다.</p>
+            <p>논리회로에서 NOT 역할을 합니다.</p>
+            <p>일반 상태에서는 불이 켜져있고, 레드스톤 신호를 받으면 불이 꺼집니다.</p>
+            <a href="https://ibb.co/1G2Qvfy7"><img src="https://i.ibb.co/gZg9jMqm/redstone-lamp.png" alt="redstone-lamp" border="0" style="margin-top: 80px;" width="400" height="300"></a>
+            <p>'레드스톤 램프'입니다.</p>
+            <p>회로의 출력 역할을 합니다.</p>
+            <p>신호를 받으면 램프에 불이 켜집니다.</p>
+        </section>
+        <section id="and-gate">
+            <h2>AND Gate</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/bYaNiyQm0-E?si=Mub6AIniZ6UpHdlE" style="margin-bottom: 50px;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div style="white-space: pre-line;">
+                AND 게이트는 입력이 둘 다 1이면 출력이 1이 됩니다.
+                레드스톤 횃불이 기본 상태에서 1인 것을 이용하여 AND 게이트를 제작했습니다.
+
+            </div>
+        </section>
+
+        <section id="or-gate">
+            <h2>OR Gate</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/fZQhbZk2oOE?si=TDMIZ3Qk9nOSoBnD" style="margin-bottom: 50px;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div style="white-space: pre-line;">
+                OR 게이트는 입력에 1이 하나라도 있다면 출력이 1이 됩니다.
+                그래서 레드스톤 가루만을 이용하여 제작했습니다.
+
+            </div>
+        </section>
+
+        <section id="not-gate">
+            <h2>NOT Gate (Inverter)</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ohHpvPszSFg?si=dsrc07rqemvgrpER" style="margin-bottom: 50px;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div style="white-space: pre-line;">
+                NOT 게이트는 출력이 입력값의 반대입니다.
+                그래서 NOT 역할을 하는 횃불을 활용하여 제작했습니다.
+
+            </div>
+        </section>
+
+        <section id="nand-gate">
+            <h2>NAND Gate</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/kTXFANJtpLw?si=dBADddHRIjwIhySk" style="margin-bottom: 50px;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div style="white-space: pre-line;">
+                NAND 게이트는 AND 게이트의 출력에 반대값을 가집니다.
+                AND 게이트와 NOT 게이트를 붙여서 제작했습니다.
+                
+            </div>
+        </section>
+
+        <section id="nor-gate">
+            <h2>NOR Gate</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/sj5JmGxyedI?si=QJh2iTyCEAw3vvjy" style="margin-bottom: 50px;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div style="white-space: pre-line;">
+                NOR 게이트는 OR 게이트의 출력에 반대값을 가집니다.
+                OR 게이트와 NOT 게이트를 붙여서 제작했습니다.
+            </div>
+        </section>
+
+        <section id="xor-gate">
+            <h2>XOR Gate</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/e4AcibxljFQ?si=RJjMWYeNMFrjyJZ8" style="margin-bottom: 50px;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div style="white-space: pre-line;">
+                XOR 게이트는 두 개의 입력값이 서로 다를 때 출력값이 1이 됩니다.
+                AND 게이트 두 개에 각각 입력값 하나, 다른 입력값의 반대값 하나를 받게하도록 제작했습니다.
+
+            </div>
+        </section>
+
+        <section id="xnor-gate">
+            <h2>XNOR Gate</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/c5ndbTIVeio?si=wFPX2hjRg1AGHIJf" style="margin-bottom: 50px;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div style="white-space: pre-line;">
+                XNOR 게이트는 XOR 게이트의 출력값에 반대값을 가집니다.
+                XOR 게이트에 NOT 게이트를 붙여서 제작했습니다.
+
+            </div>
+        </section>
+
+        <section id="adder-gate">
+            <h2>ADDER (가산기)</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dSzYrCP01Ok?si=0wkS-eTfbDBwU7co" style="margin-bottom: 50px;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div style="white-space: pre-line;">
+                위의 영상 기준
+    
+                1번 0001(1) + 0001(1) = ?
+                2번 0110(6) + 0101(5) = ?
+                3번 1011(11) + 0110(6) = ?
+
+                으로 출력을 해보았습니다.
+
+
+            </div>
+            <a href="https://ibb.co/JFxq62Wg"><img src="https://i.ibb.co/TqK1jRDd/ADDER-TOP.png" style="margin-bottom: 50px;" alt="ADDER-TOP" border="0" width="600" height="400"></a>
+            <div style="white-space: pre-line;">
+                위의 영상에서 나온 이진 가산기의 전체 모습입니다.
+
+                첫째 자리는 반가산기, 둘째, 셋째, 넷째 자리는 전가산기로 구성하였고
+                다섯째 자리까지 캐리 아웃 값을 받아서 나타내었습니다.
+                
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
